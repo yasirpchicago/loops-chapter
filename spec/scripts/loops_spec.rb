@@ -22,7 +22,7 @@ describe "loops_letter_count.rb" do
     loops_letter_count = $".select{|r| r.include? 'loops_letter_count.rb'}
     $".delete(loops_letter_count.first)
     
-    allow_any_instance_of(Object).to receive(:gets).and_return("banana")
+    allow_any_instance_of(Object).to receive(:gets).and_return("banana\n")
     
     response = /1\n2\n3\n4\n5\n6\n.*banana is 6 letters long/i
 
@@ -41,7 +41,7 @@ describe "loops_letter_count.rb" do
     loops_letter_count = $".select{|r| r.include? 'loops_letter_count.rb'}
     $".delete(loops_letter_count.first)
     
-    allow_any_instance_of(Object).to receive(:gets).and_return("fantasmagorical")
+    allow_any_instance_of(Object).to receive(:gets).and_return("fantasmagorical\n")
     
     response = /1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n.*fantasmagorical is 15 letters long/i
 
@@ -60,7 +60,7 @@ describe "loops_letter_count.rb" do
     loops_letter_count = $".select{|r| r.include? 'loops_letter_count.rb'}
     $".delete(loops_letter_count.first)
     
-    allow_any_instance_of(Object).to receive(:gets).and_return("a")
+    allow_any_instance_of(Object).to receive(:gets).and_return("a\n")
     
     response = /1\n.*a is 1 letters long/i
 
@@ -79,7 +79,7 @@ describe "loops_multiples.rb" do
     loops_multiples = $".select{|r| r.include? 'loops_multiples.rb'}
     $".delete(loops_multiples.first)
     
-    allow_any_instance_of(Object).to receive(:gets).and_return("2")
+    allow_any_instance_of(Object).to receive(:gets).and_return("2\n")
     
     response = /2\n4\n6\n8\n10\n12\n14\n16\n18\n20/i
 
@@ -98,7 +98,7 @@ describe "loops_multiples.rb" do
     loops_multiples = $".select{|r| r.include? 'loops_multiples.rb'}
     $".delete(loops_multiples.first)
     
-    allow_any_instance_of(Object).to receive(:gets).and_return("3")
+    allow_any_instance_of(Object).to receive(:gets).and_return("3\n")
     
     response = /3\n6\n9\n12\n15\n18\n21\n24\n27\n30/i
 
@@ -117,7 +117,7 @@ describe "loops_multiples.rb" do
     loops_multiples = $".select{|r| r.include? 'loops_multiples.rb'}
     $".delete(loops_multiples.first)
     
-    allow_any_instance_of(Object).to receive(:gets).and_return("0")
+    allow_any_instance_of(Object).to receive(:gets).and_return("0\n")
     
     response = /0\n0\n0\n0\n0\n0\n0\n0\n0\n0/i
 
