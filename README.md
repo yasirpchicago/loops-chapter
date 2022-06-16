@@ -12,7 +12,7 @@ To re-run this command, you can use the UP and DOWN arrow keys to look at the hi
 
 ## Loops
 
-### loops_word_length.rb
+### loops_letter_count.rb
 Write a program that:
 
 Asks the user to input a word and counts from 1 to however long the word is.
